@@ -1,0 +1,24 @@
+
+public class StringPractice {
+
+	public static void main(String[] args) {
+		String txt1 = "abcdefghijklmnopqrstuvwxyz";
+		System.out.println(txt1.length());
+		System.out.println(txt1.toUpperCase());
+		System.out.print("Index is ");
+		System.out.println(txt1.indexOf("c"));
+		String txt2 = "Please locate the location of this word.";
+		System.out.println(txt2.indexOf("the"));
+		String txt3 = "012345678the location of this word.";
+		System.out.println(txt3.indexOf("the"));
+		String firstname = "John ";
+		String lastname = "Doe";
+		System.out.println(firstname.concat(lastname));
+		String txt4 = "We are the so-called \"Vikings\" from the north.";
+		System.out.println(txt4);
+		String txt5 = "We are the so-called \'Vikings\' from the north.";
+		System.out.println(txt5);
+		String txt6 = "We \\ are the so-called backslash.";
+		System.out.println(txt6);
+	}
+}
