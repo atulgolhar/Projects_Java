@@ -4,8 +4,9 @@ public class StringLength {
 		String txt1 = "abcdefghijklmnopqrstuvwxyz";
 		System.out.println(txt1.length());
 		System.out.println(txt1.toUpperCase());
-		
+		System.out.print("Index is ");
+		System.out.println(txt1.indexOf("c"));
 		String txt2 = "Please locate the location of this word.";
-		System.out.println(txt1.indexOf("z"));
+
 	}
 }
