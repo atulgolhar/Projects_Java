@@ -7,6 +7,8 @@ public class StringLength {
 		System.out.print("Index is ");
 		System.out.println(txt1.indexOf("c"));
 		String txt2 = "Please locate the location of this word.";
-
+		System.out.println(txt2.indexOf("the"));
+		String txt3 = "012345678the location of this word.";
+		System.out.println(txt3.indexOf("the"));
 	}
 }
