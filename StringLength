@@ -1,0 +1,8 @@
+
+public class StringLength {
+	public static void main(String[] args) {
+		String txt = "abcdefghijklmnopqrstuvwxyz";
+		System.out.println(txt.length());
+		System.out.println(txt.toUpperCase());
+	}
+}
