@@ -1,8 +1,11 @@
 
 public class StringLength {
 	public static void main(String[] args) {
-		String txt = "abcdefghijklmnopqrstuvwxyz";
-		System.out.println(txt.length());
-		System.out.println(txt.toUpperCase());
+		String txt1 = "abcdefghijklmnopqrstuvwxyz";
+		System.out.println(txt1.length());
+		System.out.println(txt1.toUpperCase());
+		
+		String txt2 = "Please locate the location of this word.";
+		System.out.println(txt1.indexOf("z"));
 	}
 }
