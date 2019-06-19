@@ -5,5 +5,7 @@ public class Practice_Math {
 		int xMax = Math.max(5, 10); System.out.println("xMax = " + xMax);
 		int xMin = Math.min(5, 10); System.out.println("xMin = " + xMin);
 		double xSqrt = Math.sqrt(64); System.out.println("xSqrt = " + xSqrt);
+		System.out.print("xMin > xMax ? --> ");
+		System.out.println(xMin > xMax);
 	}
 }
