@@ -20,5 +20,9 @@ public class StringPractice {
 		System.out.println(txt5);
 		String txt6 = "We \\ are the so-called backslash.";
 		System.out.println(txt6);
+		String x1 = "10";
+		int x2 = 20;
+		String x3 = x1 + x2; System.out.println(x3);
+		String x4 = x3 + 23; System.out.println(x4);
 	}
 }
