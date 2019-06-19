@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtGuess;
     private Button btnGuess;
     private TextView lblOutput;
-
+    private int theNumber;
     public void checkGuess() {
-        String guessText = txtGuess.getText().toString();       // 1
+        String guessText = txtGuess.getText().toString();       // 1 get guess from the text field
         String message = "";
-        try {                                                   // 2
-            int guess = Integer.parseInt(guessText);            // 3
+        try {                                                   // 2 try-catch-finally block
+            int guess = Integer.parseInt(guessText);            // 3 parse int number from guess
             if (guess < theNumber)
                 message = guess + " is too low. Guess again.";
             else if (guess > theNumber)
@@ -30,17 +30,18 @@ public class MainActivity extends AppCompatActivity {
                 message = guess + " is correct. You win! Let's play again!";
                 newGame();
             }
-        } catch (Exception e) {                                 // 4
+        } catch (Exception e) {                                 // 4 catch statement
             message = "Enter a whole number between 1 and 100.";
-        } finally {                                             // 5
+        } finally {                                             // 5 finally block
             lblOutput.setText(message);
-            txtGuess.requestFocusInWindow();
+            txtGuess.requestFocus();
             txtGuess.selectAll();
         }
     }
 
-
-
+    public void newGame() {
+        theNumber =  (int)(Math.random() * 100 + 1);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
         txtGuess = (EditText) findViewById(R.id.txtGuess);
         btnGuess = (Button) findViewById(R.id.btnGuess);
         lblOutput = (TextView) findViewById(R.id.lblOutput);
+        newGame();      // call to newGame() inside onCreate() method after connecting three GUI components
+        btnGuess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
