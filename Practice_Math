@@ -2,8 +2,8 @@
 public class Practice_Math {
 	public static void main(String[] args) {
 		System.out.println("Hello World Math!");
-		int x = Math.max(5, 10); System.out.println(x);
-		x = Math.min(5, 10); System.out.println(x);
-		double y = Math.sqrt(64); System.out.println(y);
+		int xMax = Math.max(5, 10); System.out.println("xMax = " + xMax);
+		int xMin = Math.min(5, 10); System.out.println("xMin = " + xMin);
+		double xSqrt = Math.sqrt(64); System.out.println("xSqrt = " + xSqrt);
 	}
 }
