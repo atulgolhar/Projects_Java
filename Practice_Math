@@ -1,0 +1,9 @@
+
+public class Practice_Math {
+	public static void main(String[] args) {
+		System.out.println("Hello World Math!");
+		
+		int x = Math.max(5, 10);
+		System.out.println(x);
+	}
+}
