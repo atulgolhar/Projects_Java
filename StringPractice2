@@ -1,0 +1,39 @@
+package introductionTry3;
+
+public class arraysDemoInSrc0815 {
+
+	// So far we have seen primitive data types and strings which is the reference data type
+	// These store one value
+	// Arrays can store multiple values of the same type. Create new class in the default src folder
+	// String stores 1 value; int stores 1 value
+	// Array can store multiple values thus its a linear bucket of objects
+	// Define the name of the array and define the size of the array
+	// All the elements must be the same. Length function built-in can be used for arrays
+	
+	public static void main(String[] args) {
+		
+		int[] myIntArray1;				// method 1 to create an array
+		myIntArray1 = new int[10];		// initialize new array using [] square brackets which makes it an array
+		myIntArray1[0] = 100;			// index is 0 based, each integer is 32 bits memory
+		myIntArray1[1] = 90;
+		myIntArray1[2] = 80;
+		System.out.println("0 index element of Integer Array is: " + myIntArray1[0]);
+		System.out.println("1 index element is: " + myIntArray1[1]);
+		System.out.println("2 index element is: " + myIntArray1[2]);
+		System.out.println("3 index element is: " + myIntArray1[3] + " note, default value is 0");
+		
+		String[] myStringArray1 = {"bmw", "audi", "honda"};		// method 2 to create an array
+		System.out.println("\n0 index element in String array is: " + myStringArray1[0]);
+		System.out.println("1 index element in String array is: " + myStringArray1[1]);
+		System.out.println("2 index element in String array is: " + myStringArray1[2]);
+
+		String[] myStringArray2 = {"bmw", "audi", "honda", "mercedes", "vw"};		// method 2 to create an array
+		System.out.println("3rd element is: "  + myStringArray2[3]);
+		System.out.println("4th element is: " + myStringArray2[4]);
+		
+		int len1 = myIntArray1.length;
+		int len2 = myStringArray1.length;
+		System.out.println("Length of integer array is: " + len1);
+		System.out.println("Length of string array is: " + len2);
+	}
+}
