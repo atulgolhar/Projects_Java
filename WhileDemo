@@ -1,0 +1,26 @@
+package oopConcepts;
+
+public class WhileDemo {
+
+	public static void main(String[] args) {
+		// Can only withdraw until balance is > $0
+		// Do something while some condition is true
+		
+		int i = 10;
+
+		while (i < 20) {
+			System.out.println(i);
+			i++;
+
+			if (i == 17) {
+				System.out.println("line 1");
+				System.out.println("line 2");
+				continue;
+			}
+			System.out.println("Value of i " + i);
+		}
+		
+		System.out.println("Outside loop ...");
+	}
+
+}
