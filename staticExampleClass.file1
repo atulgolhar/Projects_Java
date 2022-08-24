@@ -1,0 +1,31 @@
+package staticPackage;
+
+public class StaticExampleClass {
+
+	private String make;
+//	private int instanceNum = 0; 				// not a static variable
+	private static int instanceNum = 0;			// YES a static variable
+	
+	public StaticExampleClass(String make) { 	// creating a constructor for the class
+		this.make = make;
+		instanceNum++; 							// inside the constructor, we increment the #instance for the class
+	} 											// like a flag counter
+		
+	public String getMake() {
+		return make; 						// ATUL try using this.make
+	}
+	
+	public int getInstanceNum() { 				// 
+		return instanceNum;
+	}
+	
+}
+
+/*
+ * static keyword in Java static field or variables or methods are always associated with the class ITSELF 
+ * instead of the class instance which is the object, 
+ * not with the object of the class
+ * thus two different objects saved in memory and each object has its own make value b/c we did not use Static keyword
+ * 
+ * Attach to the CLASS and NOT to the object
+ */
