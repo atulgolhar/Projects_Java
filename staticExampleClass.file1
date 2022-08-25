@@ -29,3 +29,45 @@ public class StaticExampleClass {
  * 
  * Attach to the CLASS and NOT to the object
  */
+
+
+
+// Static variables are associated with the class itself
+// Non-static variables are associated with the objects of the class ie not with the class instance
+// Create a static package
+// Create two classes, 1st StaticDemo which has a main method and 2nd StaticExampleClass
+// 1st define or DECLARE two class variables inside StaticExampleClass 
+//							private String make;
+//							private int instanceNum = 0;
+// 		so private int instanceNum which is the number of instances created for the class and we create instanceNum specifically to explain the static context
+// Create a public CONSTRUCTOR for the class(String make)
+// 		Need to use the keyword and define the constructor = make;
+// 		Increment the instanceNum++ inside the constructor
+// 		instanceNum is the number of instances created for the class. 
+//		Goal is to have two instances of StaticExampleClass and number of instances increment ie increase from 0 to 1 
+// 		Then to get the 2nd instance, it increments by 1 from 1 to 2.
+// Create another getter method which returns the make or this.make
+//							public String getMake() 
+// Create public int getInstanceNum() and this is the very important method that actually use to explain the concept. it should return instanceNum;
+// REVIEW so this is the class we created and we use it in the StaticDemo. (ie different file) In StaticDemo we create the object for the class.
+// 		and we use these DECLARED field class variables (ie lines 4-5) to help explain the concept.
+
+// CodeDemo - Now create file #2 StaticDemo.java and we use the class definition
+// 							public static void main(String[] args)
+// 		DECLARE the class 
+// 		give the class object a name here called s1 and use new keyword and notice we use the class name AGAIN then pass in the argument object "bmw"
+//		using a make in its CONSTRUCTOR and thus able pass in String "bmw" (see line 7 above)
+// 		This is the 1st object we created. So we are setting the make from the constructor here. 
+// 		now this method will give us the make via getMake() constructor.
+// Need to verify was set successfully. We access using the getMake constructor.
+// Need to find out how many instances are created?
+// 		So in the constructor, we are setting the make and then incrementing the instanceNum
+// 		Then we print what is the instance number of this object.
+
+// New Created s2 instance. 
+// 		COPY the code block and update the CLASS OBJECT from s1 to s2. 
+// 		Run code, error for s2 as it shows instance as 1. Reason these are field variables of the class that BELONG to the OBJECT of the class.
+// 		bmw instanceNUM is 0 then iterate and get 1. benz instanceNUM is ALSO 0 thus iterate gives 1. EACH CLASS OBJECT IS ITS OWN INSTANCE.
+
+// EVENTUAL FIX is change from s1 and s2 to the CLASS NAME.
+// But notice that in StaticDemo the only change is renaming the REFERENCE NAME. But all the work is really done in the StaticExampleClass
