@@ -1,0 +1,12 @@
+package oopConceptsNFL;
+
+public class testCodeOutsideTheMethod {
+	
+	static String a = "testing printing inside vs outside the method";
+	
+	public static void main(String[] args) {
+		System.out.println(a);
+
+	}
+	
+}
